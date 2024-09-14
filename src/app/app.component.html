@@ -1,0 +1,15 @@
+<div class="performance-dashboard">
+  <div class="summary-cards">
+    <ng-container *ngFor="let summaryCardItem of summaryCardsList">
+      <app-summary-card [summaryCardData]="summaryCardItem"></app-summary-card>
+    </ng-container>
+  </div>
+
+  <mat-divider [vertical]="true"></mat-divider>
+
+  <div class="location-cards">
+    <ng-container *ngFor="let locationCardItem of locationCardsList">
+      <app-location-card [locationCardData]="locationCardItem"></app-location-card>
+    </ng-container>
+  </div>
+</div>

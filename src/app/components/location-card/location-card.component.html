@@ -1,0 +1,20 @@
+<mat-card class="location-card-container" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="image">
+      <img src="assets/images/{{locationCardData.image}}" alt="image"/>
+    </div>
+    <mat-card-title>{{locationCardData.title}}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content class="card-content">
+    <ng-container *ngFor="let item of locationCardData.content.text">
+      <div class="actions">
+        <h3>{{item}}</h3>
+        <button mat-button color="primary" (click)="openSnackBar('Show QR Code')">Show QR Code</button>
+        <button mat-button color="primary" (click)="openSnackBar('Download QR Code')">Download QR Code</button>
+        <button mat-button color="primary" (click)="openSnackBar('Copy URL')">Copy URL</button>
+      </div>
+      <mat-divider></mat-divider>
+    </ng-container>
+  </mat-card-content>
+</mat-card>

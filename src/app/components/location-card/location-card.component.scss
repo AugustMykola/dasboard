@@ -1,0 +1,67 @@
+.location-card-container {
+  width: 100%;
+  border: 3px solid green;
+  border-radius: 10px;
+}
+
+mat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  mat-card-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+.card-content {
+  padding: 20px;
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+
+    h3 {
+      font-size: 1em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-bottom: 5px;
+      background-color: #0bda51;
+      color: white;
+      border-radius: 5px;
+      width: 100%;
+      text-align: left;
+      padding: 8px;
+
+      &:hover {
+        background-color: #3df57b;
+      }
+    }
+  }
+}
+
+mat-divider {
+  margin: 15px 0;
+  background-color: green;
+  height: 2px;
+}
